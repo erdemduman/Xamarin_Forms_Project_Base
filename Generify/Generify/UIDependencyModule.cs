@@ -21,9 +21,8 @@ namespace Generify
 
 		private void LoadPages(ContainerBuilder builder)
 		{
-			builder.RegisterType<BottomNavigationPage>().As<IBottomNavigationPage>();
-			builder.RegisterType<LoginPage>().As<ILoginPage>();
-			builder.RegisterType<SplashPage>().As<ISplashPage>();
+			builder.RegisterType<MainPage>().As<IMainPage>();
+			builder.RegisterType<IntroPage>().As<IIntroPage>();
 		}
 	}
 }

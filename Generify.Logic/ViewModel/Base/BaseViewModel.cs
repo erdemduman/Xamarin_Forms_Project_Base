@@ -16,6 +16,7 @@ namespace Generify.Logic.ViewModel.Base
 		public virtual void OnCreate(object NavigationData)
 		{
 			Commands = new Dictionary<string, ICommand>();
+			Navigation = DependencyManager.Resolve<INavigationManager>();
 		}
 
 		public virtual void OnDestroy()
@@ -37,11 +38,19 @@ namespace Generify.Logic.ViewModel.Base
 		}
 		#endregion
 
+		#region Properties
 		public Dictionary<string, ICommand> Commands
 		{
 			get { return Get<Dictionary<string, ICommand>>(); }
 			set { Set(value); }
 		}
+
+		public INavigationManager Navigation
+		{
+			get { return Get<INavigationManager>(); }
+			set { Set(value); }
+		}
+		#endregion
 
 		public class BaseParameter
 		{

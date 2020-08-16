@@ -26,40 +26,19 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="View\ViewPage\HomeViewPage.xaml.cs">
-      <DependentUpon>HomeViewPage.xaml</DependentUpon>
+    <Compile Update="Page\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Update="View\ViewPage\NotificationsViewPage.xaml.cs">
-      <DependentUpon>NotificationsViewPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="View\ViewPage\PlaylistViewPage.xaml.cs">
-      <DependentUpon>PlaylistViewPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="View\ViewPage\ProfileViewPage.xaml.cs">
-      <DependentUpon>ProfileViewPage.xaml</DependentUpon>
+    <Compile Update="Page\IntroPage.xaml.cs">
+      <DependentUpon>IntroPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Page\BottomNavigationPage.xaml">
+    <EmbeddedResource Update="Page\MainPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Page\LoginPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="View\ViewPage\NotificationsViewPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="View\ViewPage\PlaylistViewPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="View\ViewPage\ProfileViewPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Page\SplashPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="View\BottomNavigationView.xaml">
+    <EmbeddedResource Update="Page\IntroPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="View\TitleView.xaml">

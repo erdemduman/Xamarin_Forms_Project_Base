@@ -7,12 +7,12 @@ using Xamarin.Forms.Xaml;
 namespace Generify.Page
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class SplashPage : BasePage, ISplashPage
+	public partial class IntroPage : BasePage, IIntroPage
 	{
-		public SplashPage()
+		public IntroPage()
 		{
 			InitializeComponent();
-			ViewModel = new SplashPageViewModel();
+			ViewModel = new IntroPageViewModel();
 			InitBindingContext();
 		}
 

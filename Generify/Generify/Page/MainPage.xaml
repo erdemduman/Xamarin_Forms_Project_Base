@@ -6,13 +6,12 @@
 			 xmlns:base="clr-namespace:Generify.Page.Base"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Generify.Page.BottomNavigationPage"
+             x:Class="Generify.Page.MainPage"
 			 NavigationPage.HasNavigationBar="False">
 
 	<StackLayout>
-		<view:BottomNavigationView 
-			VerticalOptions="EndAndExpand" 
-			HeightRequest="60"/>
+		<view:TitleView />
+		<Label Text="{Binding MyText}" HorizontalOptions="Center"/>
 	</StackLayout>
 
 	<base:BasePage.Resources>

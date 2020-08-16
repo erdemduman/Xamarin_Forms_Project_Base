@@ -18,7 +18,7 @@ namespace Generify.Logic
 
 		public void OnCreate()
 		{
-			_navigation.SetMainPage<ISplashPage>();
+			_navigation.SetMainPage<IIntroPage>();
 		}
 
 		public void OnStart()

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Generify.Contracts.Page
 {
-	public interface IProfilePage : IPage
+	public interface IIntroPage : IPage
 	{
 	}
 }

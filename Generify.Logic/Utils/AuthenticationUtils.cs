@@ -1,5 +1,4 @@
 ﻿using Xamarin.Forms.Internals;
-using ScopeConstants = Generify.Logic.Constants.AppConstants.ScopeConstants;
 
 namespace Generify.Logic.Utils
 {

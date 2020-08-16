@@ -11,7 +11,7 @@ namespace Generify.Network.Utils
 	{
 		private static Dictionary<Type, string> _apiDictionary = new Dictionary<Type, string>
 		{
-			{typeof(ISpotifyApi), "https://accounts.spotify.com"}
+			{typeof(IMyApi), "https://testurl.com"}
 		};
 
 		public static string GetBaseUrl(Type type)

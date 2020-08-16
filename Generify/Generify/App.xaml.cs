@@ -1,7 +1,4 @@
 ﻿using Generify.Logic;
-using Generify.Logic.Constants;
-using Generify.Page;
-using Generify.Page.Base;
 using Xamarin.Forms;
 
 namespace Generify
@@ -13,14 +10,6 @@ namespace Generify
 		public App()
 		{
 			InitializeComponent();
-			if (!Current.Properties.ContainsKey(ResourceConstant.FirstRun))
-			{
-				Current.Properties[ResourceConstant.FirstRun] = true;
-				Current.Properties[ResourceConstant.IsAuth] = false;
-			}
-			else
-				Current.Properties[ResourceConstant.FirstRun] = false;
-
 			_app = MyApp.Factory();
 			_app.OnCreate();
 		}

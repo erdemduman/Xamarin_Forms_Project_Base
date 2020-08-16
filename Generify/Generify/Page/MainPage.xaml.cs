@@ -1,19 +1,18 @@
 ﻿using Generify.Contracts;
 using Generify.Contracts.Page;
-using Generify.Logic.ViewModel.BottomNavigation;
+using Generify.Logic.ViewModel;
 using Generify.Page.Base;
 using Xamarin.Forms.Xaml;
-
 
 namespace Generify.Page
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class BottomNavigationPage : BasePage, IBottomNavigationPage
+	public partial class MainPage : BasePage, IMainPage
 	{
-		public BottomNavigationPage()
+		public MainPage()
 		{
 			InitializeComponent();
-			ViewModel = new BottomNavigationPageViewModel();
+			ViewModel = new MainPageViewModel();
 			InitBindingContext();
 		}
 
