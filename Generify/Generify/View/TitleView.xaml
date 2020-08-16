@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Generify.View.TitleView"
+			 x:Name="self"
+			 Style="{StaticResource TitleViewStyle}">
+
+	<ContentView.Content>
+		<Grid>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="55"/>
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="4*"/>
+				<ColumnDefinition Width="*"/>
+			</Grid.ColumnDefinitions>
+
+			<Image Source="back_theme.png" 
+				   Grid.Column="0" HeightRequest="40" 
+				   VerticalOptions="Center"
+				   IsVisible="{Binding HideBackButton, Source={x:Reference self}, Converter={StaticResource InverseBool}}"/>
+			<Image Source="generify_title"
+				   Grid.Column="1"
+				   VerticalOptions="Center"
+				   HorizontalOptions="Center"
+				   HeightRequest="40"/>
+			<Image Source="more_theme.png" 
+				   Grid.Column="2" 
+				   HeightRequest="30" 
+				   VerticalOptions="Center"/>
+		</Grid>
+	</ContentView.Content>
+
+	<ContentView.Resources>
+		<ResourceDictionary>
+			<Style x:Key="TitleViewStyle" TargetType="ContentView">
+				<Setter Property="BackgroundColor" Value="{StaticResource White}"/>
+			</Style>
+		</ResourceDictionary>
+	</ContentView.Resources>
+</ContentView>

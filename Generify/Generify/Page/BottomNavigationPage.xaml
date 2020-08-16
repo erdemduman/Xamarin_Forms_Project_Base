@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<base:BasePage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+			 xmlns:view="clr-namespace:Generify.View"
+			 xmlns:base="clr-namespace:Generify.Page.Base"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Generify.Page.BottomNavigationPage"
+			 NavigationPage.HasNavigationBar="False">
+
+	<StackLayout>
+		<view:BottomNavigationView 
+			VerticalOptions="EndAndExpand" 
+			HeightRequest="60"/>
+	</StackLayout>
+
+	<base:BasePage.Resources>
+
+	</base:BasePage.Resources>
+</base:BasePage>
