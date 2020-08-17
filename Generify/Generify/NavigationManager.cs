@@ -8,7 +8,7 @@ using Xamarin.Forms;
 namespace Generify
 {
 	public class NavigationManager : INavigationManager
-	{ 	
+	{
 		public void SetMainPage<T>(object navigationData) where T : class, IPage
 		{
 			var page = GetPage<T>();

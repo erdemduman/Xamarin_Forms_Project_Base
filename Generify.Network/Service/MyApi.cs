@@ -9,9 +9,7 @@ namespace Generify.Network.Service
 		public static async Task<string> MyApiCall(Parameter parameter)
 		{
 			var p = parameter as MyApiCallParameter;
-			return await Api.MyApiCall(
-				param: p.Param
-			);
+			return await Api.MyApiCall(param: p.Param);
 		}
 
 		public class MyApiCallParameter : Parameter

@@ -23,17 +23,14 @@ namespace Generify.Logic
 
 		public void OnStart()
 		{
-
 		}
 
 		public void OnResume()
 		{
-
 		}
 
 		public void OnSleep()
 		{
-
 		}
 
 		private static MyApp App { get; set; }

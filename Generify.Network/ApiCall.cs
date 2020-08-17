@@ -10,6 +10,5 @@ namespace Generify.Network
 
 	public class ApiCall
 	{
-
 	}
 }

@@ -8,7 +8,7 @@ namespace Generify.Page.Base
 	{
 		public void InitBindingContext()
 		{
-			if(ViewModel != null)
+			if (ViewModel != null)
 			{
 				BindingContext = ViewModel;
 			}

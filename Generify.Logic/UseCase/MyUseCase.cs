@@ -25,12 +25,10 @@ namespace Generify.Logic.UseCase
 
 		void IApiCallback.OnFail(ApiException exception)
 		{
-
 		}
 
 		void IApiCallback.OnFinal()
 		{
-
 		}
 
 		public class Parameter : BaseParameter

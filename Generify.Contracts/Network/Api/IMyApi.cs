@@ -6,8 +6,6 @@ namespace Generify.Contracts.Network.Api
 	public interface IMyApi
 	{
 		[Get("")]
-		Task<string> MyApiCall(
-			string param
-		);
+		Task<string> MyApiCall(string param);
 	}
 }

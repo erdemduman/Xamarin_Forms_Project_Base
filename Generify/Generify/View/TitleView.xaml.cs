@@ -21,7 +21,7 @@ namespace Generify.View
 		(
 			propertyName: nameof(HideBackButton),
 			returnType: typeof(bool),
-			declaringType: typeof(TitleView), 
+			declaringType: typeof(TitleView),
 			defaultValue: false,
 			propertyChanged: null
 		);

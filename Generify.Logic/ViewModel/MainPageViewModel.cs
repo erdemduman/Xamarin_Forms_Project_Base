@@ -12,9 +12,10 @@ namespace Generify.Logic.ViewModel
 		}
 
 		#region Properties
-		public string MyText { 
-			get { return Get<string>(); } 
-			set { Set(value); } 
+		public string MyText
+		{
+			get { return Get<string>(); }
+			set { Set(value); }
 		}
 		#endregion
 
