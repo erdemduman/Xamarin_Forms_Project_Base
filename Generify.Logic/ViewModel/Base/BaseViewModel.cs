@@ -1,4 +1,5 @@
 ﻿using Generify.Contracts;
+using Generify.Logic.Utils;
 using System;
 using System.Collections.Generic;
 using System.Windows.Input;
@@ -15,7 +16,7 @@ namespace Generify.Logic.ViewModel.Base
 		#region LifeCycle
 		public virtual void OnCreate(object NavigationData)
 		{
-			Commands = new Dictionary<string, ICommand>();
+			Commands = new ObservableDictionary<string, ICommand>();
 			Navigation = DependencyManager.Resolve<INavigationManager>();
 		}
 
@@ -39,9 +40,9 @@ namespace Generify.Logic.ViewModel.Base
 		#endregion
 
 		#region Properties
-		public Dictionary<string, ICommand> Commands
+		public ObservableDictionary<string, ICommand> Commands
 		{
-			get { return Get<Dictionary<string, ICommand>>(); }
+			get { return Get<ObservableDictionary<string, ICommand>>(); }
 			set { Set(value); }
 		}
 

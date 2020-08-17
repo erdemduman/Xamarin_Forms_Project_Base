@@ -12,7 +12,7 @@
 		<StackLayout>
 			<Button Text="Go To Main Page" 
 					HorizontalOptions="Center" 
-					Command="{Binding MyCom}"/>
+					Command="{Binding Commands[GoToMainPage]}"/>
 		</StackLayout>
 	</ContentPage.Content>
 </base:BasePage>
